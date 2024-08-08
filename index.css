@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #0284C7;
+    margin: 20px;
+    padding-bottom: 20px;
+    color: white;
+    width: 500px;
+
+}
+
+#guest-score {
+    background-color: black;
+    width: 120px;
+    font-size: 90px;
+    margin: 20px;
+    padding: 5px;
+    color: red;
+    font-family: 'CursedTimer';
+}
+
+#home-score {
+    background-color: black;
+    width: 120px;
+    font-size: 90px;
+    margin: 20px;
+    padding: 5px;
+    color: red;
+    font-family: 'CursedTimer';
+}
+
+.newgame button {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    font-family: 'CursedTimer';
+    padding: 5px;
+}
