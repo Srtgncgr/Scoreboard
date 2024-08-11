@@ -1,26 +1,48 @@
 @font-face {
     font-family: 'CursedTimer';
-    src: url(CursedTimerUlil-Aznm.ttf);
+    src: url(./CursedTimerUlil-Aznm.ttf);
 }
+
+/* =============  BODY CSS SETTING =============== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 .container {
-    display: flex;
-    justify-content: space-around;
-    border: 3px solid black;
-    border-radius: 5px;
-    background-color: #0284C7;
-    margin: 20px;
-    padding-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px; 
+    background-color: #0377b1;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 40px;
     color: white;
     width: 500px;
 
 }
 
-#guest-score {
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 2em; 
+    align-items: center;
+}
+
+/* =========== HOME AND GUEST CSS SETTINGS =============== */
+
+#home-score, #guest-score {
     background-color: black;
     width: 120px;
     font-size: 90px;
@@ -30,20 +52,13 @@ body {
     font-family: 'CursedTimer';
 }
 
-#home-score {
-    background-color: black;
-    width: 120px;
-    font-size: 90px;
-    margin: 20px;
-    padding: 5px;
-    color: red;
-    font-family: 'CursedTimer';
-}
+/* ================  BUTTONS CSS SETTINGS =============== */
 
 .newgame button {
-    margin-top: 100px;
+    margin-top: 2em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    cursor: pointer; 
 }
 
 button {
@@ -51,4 +66,5 @@ button {
     border: 1px solid black;
     font-family: 'CursedTimer';
     padding: 5px;
+    cursor: pointer;
 }

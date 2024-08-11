@@ -1,41 +1,31 @@
+// TAKING CONTROL OVER DOM ELEMENTS
+
 let homeScoreScreen = document.getElementById("home-score");
 let guestScoreScreen = document.getElementById("guest-score");
+
+// HOME AND GUEST SCORE VARIABLES INITIALIZATION
+
 homeScore = 0;
 guestScore = 0;
 
-function homePlusOne() {
-    homeScoreScreen.innerText = homeScore + 1;
-    homeScore += 1;
+
+
+function increasePoints(team, points) {
+    if(team === 'home') {
+    homeScoreScreen.innerText = homeScore + points;
+    homeScore += points;
+    } else if(team === 'guest') {
+    guestScoreScreen.innerText = guestScore + points;
+    guestScore += points;
+    }
 }
 
-function homePlusTwo() {
-    homeScoreScreen.innerText = homeScore + 2;
-    homeScore += 2;
-}
 
-function homePlusThree() {
-    homeScoreScreen.innerText = homeScore + 3;
-    homeScore += 3;
-}
-
-function guestPlusone() {
-    guestScoreScreen.innerText = guestScore + 1;
-    guestScore +=1;
-}
-
-function guestPlusTwo() {
-    guestScoreScreen.innerText = guestScore + 2;
-    guestScore +=2;
-}
-
-function guestPlusThree() {
-    guestScoreScreen.innerText = guestScore + 3;
-    guestScore +=3;
-}
+// NEW SCORE FUNCTION
 
 function newGame() {
-    homeScore = 0;
+    homeScore = 0;   
     guestScore = 0;
-    homeScoreScreen.innerText = homeScore;
-    guestScoreScreen.innerText = guestScore;
+    homeScoreScreen.innerText = 0;
+    guestScoreScreen.innerText = 0;
 }

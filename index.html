@@ -1,32 +1,49 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
+<DOCTYPE html>
+    <!-- HEAD SECTION -->
 
-            <div class="column">
-                <h3>ALIENS</h3>
-                <h2 id="home-score">0</h2>
-                <div>
-                    <button onclick="homePlusOne()">+1</button>
-                    <button onclick="homePlusTwo()">+2</button>
-                    <button onclick="homePlusThree()">+3</button>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="index.css">
+            <title>Basketball Scoreboard App</title>
+        </head>
+
+        <body>
+            <main>
+                <!-- MAIN SECTION -->
+                <div class="container">
+                    <h1 aria-label="Basketball Scoreboard App"></h1>
+                    <div class="scores"> 
+                    <!-- ALIENS TEAM SETTINGS -->
+                        <div class="column">
+                            <h2>ALIENS</h2>
+                            <h3 id="home-score">0</h3>
+                            <div>
+                                <button onclick="increasePoints('home', 1)">+1</button>
+                                <button onclick="increasePoints('home', 2)">+2</button>
+                                <button onclick="increasePoints('home', 3)">+3</button>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <!-- UNICORNS TEAM SETTINGS -->
+                            <h2>UNICORNS</h2>
+                            <h3 id="guest-score">0</h3>
+                            <div>
+                                <button onclick="increasePoints('guest', 1)">+1</button>
+                                <button onclick="increasePoints('guest', 2)">+2</button>
+                                <button onclick="increasePoints('guest', 3)">+3</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="newgame">
+                        <button onclick="newGame()">New Game</button>
+                    </div>
+
                 </div>
-            </div>
-            <div class="newgame">
-                <button onclick="newGame()">New Game</button>
-            </div>
-            <div class="column">
-                <h3>UNICORNS</h3>
-                <h2 id="guest-score">0</h2>
-                <div>
-                    <button onclick="guestPlusone()">+1</button>
-                    <button onclick="guestPlusTwo()">+2</button>
-                    <button onclick="guestPlusThree()">+3</button>
-                </div>
-            </div>
-        </div>
-        <script src="index.js"></script>
-    </body>
-</html>
+
+            </main>
+            <script src="index.js"></script>
+        </body>
+
+        </html>
