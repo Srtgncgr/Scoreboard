@@ -1,4 +1,3 @@
-// TAKING CONTROL OVER DOM ELEMENTS
 
 let homeScoreScreen = document.getElementById("home-score");
 let guestScoreScreen = document.getElementById("guest-score");
